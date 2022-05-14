@@ -1,1 +1,1 @@
-web: gunicorn BotLine:app --log-file -
+web: python BotLine.py
