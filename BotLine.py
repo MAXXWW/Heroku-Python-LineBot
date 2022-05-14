@@ -1,14 +1,16 @@
-import os
-from linebot.models.messages import FileMessage, ImageMessage
-import pymysql
+import os  
+from linebot.models.messages import FileMessage, ImageMessage 
+import pymysql 
 from flask import Flask, request, abort
 
 from linebot import (
-    LineBotApi, WebhookHandler
-)
-from linebot.exceptions import (
+    LineBotApi, WebhookHandler 
+)                              
+
+from linebot.exceptions import (  
     InvalidSignatureError
 )
+
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage
 )
